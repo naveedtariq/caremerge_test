@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<% if (titles.length > 0) { %>
+	    <h1> Following are the titles of given websites: </h1>
+	    <ul id='titles'>
+	    	<% for(var i=0; i < titles.length; ++i) { %>
+	    		<li>
+	    			<%= titles[i]["requested_url"] + " - \"" +  titles[i]["title"] + "\"" %>
+	    		</li>
+	    	<% } %>
+	    </ul>
+    <% } %>
+</body>
+</html>
